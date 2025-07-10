@@ -1,0 +1,54 @@
+
+Prompts:
+
+- ayudame a realizar graficas de cada columna y recomiendame la grafica, usa este codigo como base, estoy usando apace spark con zeppelin:  
+
+z.show(
+	dfWeather
+		.select("Summary")
+		.groupBy("Summary")
+		.count
+)  
+ 
+- prueba algo diferente con este codigo, y no importes nada:
+
+z.show(
+	dfNacidosCleanFinal
+		.select("anio_nac")
+		.groupBy("anio_nac")
+		.count
+		.orderBy("anio_nac")
+		.select($"anio_nac", log($"count"), $"count")
+)
+
+- como saco el promedio de Temperature (C) por dia usando z.show
+
+- quiero ver el promedio de Humidity por mes y anio pero con z.show directo
+
+- me pasas el codigo para sacar el promedio de Pressure (millibars) por anio con grafica
+
+- como saco el promedio de Wind Speed (km/h) por cada hora del dia sin meter mas funciones
+
+- quiero graficar Apparent Temperature (C) por cada mes anio en formato yyyymm
+
+- me ayudas a ver el promedio de Visibility (km) por dia usando solo z.show
+
+- como hago para sacar el promedio de Loud Cover por dia sin complicarme
+
+- quiero ver como cambia Humidity por mes y anio con z.show nada mas
+
+- necesito graficar el promedio de Wind Speed (km/h) por anio sin crear otro dataframe
+
+- como veo el promedio de Pressure (millibars) por hora del dia con z.show directo
+
+- quiero ver el promedio de Temperature (C) por mes en formato yyyymm con un grafico simple
+
+- ayudame a sacar el promedio de Humidity por dia con z.show y ordenado por fecha
+
+- como saco el promedio de Temperature (C) por cada mes anio usando z.show
+
+- me das el codigo para graficar Wind Speed (km/h) por hora y que grafico usar
+
+- como muestro el promedio de Temperature (C) por mes y que tipo de grafica queda mejor
+
+- necesito ver como cambia Humidity cada dia usando to_date y z.show
